@@ -1,0 +1,78 @@
+<div class="bg-image-1 hero">
+  <h1>Insira um novo Funcionario</h1>
+  <form [formGroup]="fornecedorForm" (ngSubmit)="inserir()" class="row g-3">
+    <div class="mb-1">
+      <label for="Lucas Barros" class="form-label">Nome do Funcionario</label>
+      <input type="text" class="form-control" id="nomeFuncionario" aria-describedby="nomeFuncionarioHelp"
+        placeholder="Nome" formControlName="nome">
+    </div>
+    <div class="mb-1">
+      <label for="exampleInputPassword1" class="form-label">Usuário</label>
+      <input type="text" class="form-control" id="exampleInputPassword1" placeholder="x789" formControlName="usuario">
+    </div>
+    <div class="mb-1">
+      <label for="exampleInputEmail1" class="form-label">Senha do Usuário</label>
+      <input type="password" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+        placeholder="@l123" formControlName="senha">
+    </div>
+    <br>
+    <div class="mb-1">
+      <label for="disabledSelect" class="form-label">Cargo do Funcionario</label>
+      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+        placeholder="analista" formControlName="cargo">
+    </div>
+
+    <div class="mb-1">
+      <label for="nomeDoCurso" class="form-label">Nome do Curso</label>
+      <input type="text" class="form-control" id="nomeDoCurso" placeholder="Curso" formControlName="nomeDoCurso">
+  </div>
+
+    <div class="mb-1">
+      <label for="disabledSelect" class="form-label">Cadastrar Curso do Funcionario</label>
+      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+        placeholder="wwww.ghajmovm" formControlName="video">
+    </div>
+    <div class="col-auto">
+      <button type="submit" class="btn btn-primary">Enviar</button>
+    </div>
+    <div class="col-auto">
+      <a href="" class="btn btn-warning">Voltar</a>
+    </div>
+  </form>
+
+
+
+
+  <h2>Listar de Funcionario</h2>
+
+  <table class="table table-dark table-striped-columns mt-3">
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Nome</th>
+        <th scope="col">Usuário</th>
+        <th scope="col">Senha</th>
+        <th scope="col">Cargo</th>
+        <th scope="col">Curso</th>
+        <th scope="col">URL do Curso</th>
+        <th scope="col">Ações</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of fornecedores; trackBy: trackByFn">
+        <th scope="row">{{ item.id }}</th>
+        <td>{{ item.nome }}</td>
+        <td>{{ item.usuario }}</td>
+        <td>{{ item.senha }}</td>
+        <td>{{ item.cargo }}</td>
+        <td>{{ item.nomeDoCurso }}</td>
+        <td>{{ item.video }}</td>
+        <td>
+          <input type="button" value="Remover" class="btn btn-danger" (click)="remover(item.id)"/>
+          <a href="fornecedor/{{ item.id }}" class="btn btn-warning">Editar</a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>

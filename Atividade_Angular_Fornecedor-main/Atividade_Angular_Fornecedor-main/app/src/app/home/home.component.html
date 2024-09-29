@@ -1,0 +1,20 @@
+<div class="bg-image-1 hero">
+    <h1 class="hero-title">Faça seu Login</h1>
+    
+    <form [formGroup]="loginForm" (ngSubmit)="login()" class="row g-3">
+        <div class="mb-1">
+          <label for="exampleInputPassword1" class="form-label">Usuário</label>
+          <input type="text" class="form-control" id="exampleInputPassword1" placeholder="x789" formControlName="usuario">
+        </div>
+        <div class="mb-1">
+          <label for="exampleInputEmail1" class="form-label">Senha do Usuário</label>
+          <input type="password" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+            placeholder="@l123" formControlName="senha">
+        </div>
+        <br>
+
+        <div class="col-auto">
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </div>
+      </form>
+</div>

@@ -1,0 +1,47 @@
+.bg-image-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza os itens horizontalmente */
+    justify-content: center; /* Centraliza os itens verticalmente */
+    width: 100%;
+    min-height: 100vh; /* Garante que ocupe a altura total da viewport */
+    background-image: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, 0)), url(../fornecedor/iamgens/eurofarma-Ranking-Open-Corps.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+    text-align: center; /* Centraliza o texto dentro do contêiner */
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column; /* Organiza os campos do formulário em coluna */
+    align-items: center; /* Centraliza os campos do formulário */
+    width: 100%; /* Ajusta a largura para o contêiner */
+    max-width: 500px; /* Limita a largura máxima do formulário */
+    margin: 0 auto; /* Centraliza o formulário horizontalmente */
+}
+
+.col-auto {
+    width: 100%; /* Faz com que os campos ocupem a largura total do formulário */
+    margin-bottom: 1rem; /* Adiciona espaçamento entre os campos */
+}
+
+.btn {
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid #dc143c; /* Espessura da borda ajustada */
+    background-color: #dc143c;
+    padding: 6px 1.5rem; /* Padding lateral diminuído */
+    border-radius: 1.5rem; /* Arredondamento ajustado */
+    font-weight: 600; /* Peso da fonte ajustado */
+    transition: .3s; /* Duração da transição ajustada */
+    margin: 10px auto; /* Margem para espaçamento entre botões e centralização */
+    display: inline-block; /* Necessário para centralizar corretamente */
+}
+
+.btn:hover {
+    background-color: #c11235; /* Efeito de hover com cor mais escura */
+    border-color: #c11235; /* Cor da borda ao passar o mouse */
+}

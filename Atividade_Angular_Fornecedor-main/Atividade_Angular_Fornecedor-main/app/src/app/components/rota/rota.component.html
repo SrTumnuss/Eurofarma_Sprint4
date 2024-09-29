@@ -1,0 +1,22 @@
+<div class="bg-image-1 hero">
+  <div class="info-container">
+    <p>{{ fornecedor?.nome }} - {{ fornecedor?.cargo }}</p>
+  </div>
+
+  <div class="content-container" *ngIf="fornecedor?.video">
+    <h1 class="curso-title">{{ fornecedor?.nomeDoCurso }}</h1> 
+    <iframe 
+      width="560" 
+      height="315" 
+      [src]="sanitizarUrl(fornecedor?.video)" 
+      title="YouTube video player" 
+      frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+      allowfullscreen>
+    </iframe>
+  </div>
+
+  <div class="col-auto">
+    <a href="" class="btn btn-info mt-3">Voltar</a>
+  </div>
+</div>

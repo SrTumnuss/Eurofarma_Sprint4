@@ -1,0 +1,31 @@
+{
+  "Fornecedor": [
+    {
+      "nome": "Lucas",
+      "usuario": "ADM123",
+      "senha": "123",
+      "cargo": "Analista",
+      "video": "",
+      "id": "O9uCsG",
+      "nomeDoCurso": ""
+    },
+    {
+      "nome": "Lucas Miady Miquelin",
+      "usuario": "FUN123",
+      "senha": "123",
+      "cargo": "ANALISTA",
+      "video": "https://www.youtube.com/embed/VQKbQMWoIeo?si=m6vU4lgYxEbDnpL-",
+      "id": "ywR8Vd",
+      "nomeDoCurso": "People Skills, negociação com a metodologia de Harvard e carreira"
+    },
+    {
+      "nome": "Kaike Peirote",
+      "usuario": "FUN321",
+      "senha": "123",
+      "cargo": "ANALISTA",
+      "video": "https://www.youtube.com/embed/dsegbl0lhcY?si=436JaxlPjpQWvpaU",
+      "id": "f2Yvnd",
+      "nomeDoCurso": "Curso de Farmacologia: Aula 1 - Introdução a farmacologia"
+    }
+  ]
+}

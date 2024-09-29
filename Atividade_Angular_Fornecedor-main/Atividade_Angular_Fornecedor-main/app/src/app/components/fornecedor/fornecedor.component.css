@@ -1,0 +1,60 @@
+/* :root {
+    --color-light: #fff;
+    --color-dark: #000;
+    --color-primary: #dc1489;
+} */
+
+.hero {
+    color:  #fff;;
+ 
+}
+
+.btn {
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid #dc143c; /* Ajustei a espessura da borda para ficar mais fina */
+    background-color: #dc143c;
+    padding: 6px 1.5rem; /* Diminui o padding lateral para deixar os botões mais estreitos */
+    border-radius: 1.5rem; /* Ajustei o arredondamento para 1.5rem para um visual mais compacto */
+    font-weight: 600; /* Diminui um pouco o peso da fonte */
+    transition: .3s; /* Ajustei a duração da transição */
+    margin: 10px;
+}
+
+
+
+
+.container {
+    
+}
+
+.h1{
+
+    
+
+}
+
+
+
+/**************** classes mais específicas ****************************/
+.bg-image-1 {
+    background-image: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, 0)),
+    url(iamgens/eurofarma-Ranking-Open-Corps.jpg);  
+
+    width: 100%;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+/* .bg-color-1 {
+    background-color: var(--color-dark);
+} */
